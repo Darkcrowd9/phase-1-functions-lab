@@ -9,6 +9,16 @@ function distanceFromHqInBlocks(distance) {
     }
   }
 
+  
+
+  function distanceTravelledInFeet(start, destination) {
+    if (start < destination) {
+        return(destination-start) * 264
+    } else {
+        return(start-destination) * 264
+    }
+  }
+
   function distanceFromHqInFeet(feet) {
     distanceFromHqInBlocks(feet);
     if (feet === 43) {
@@ -17,14 +27,6 @@ function distanceFromHqInBlocks(distance) {
         return 2112
     }else if (feet <=42){
         return 2112
-    }
-  }
-
-  function distanceTravelledInFeet(start, destination) {
-    if (start < destination) {
-        return(destination-start) * 264
-    } else {
-        return(start-destination) * 264
     }
   }
 
